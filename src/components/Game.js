@@ -169,27 +169,42 @@ export default function Game() {
         </div>
 
         <div className="game-board">
-          <div className="grid grid-cols-5 gap-4">
+          <div className="board-grid">
+            {/* 渲染格子 */}
+            {Array(12).fill(null).map((_, index) => (
+              <div key={index} className="grid-cell" />
+            ))}
+
+            {/* 渲染所有可能的位置 */}
             {board.map((piece, index) => {
+              const row = Math.floor(index / 5);
+              const col = index % 5;
+              const top = `${row * 33}%`;
+              const left = `${col * 25}%`;
               const isCurrentPlayerPiece = piece?.color === (currentPlayer === PLAYER_RED ? playerColor : opponentColor) && revealed[index];
               const isValidMove = selectedPiece !== null && getValidMoves(board, selectedPiece, revealed).includes(index);
-
+              console.log('selectedPiece', selectedPiece, selectedPiece === index);
               return (
                 <div
                   key={index}
                   className={`piece ${revealed[index] ? 'revealed' : ''}`}
+                  style={{
+                    top,
+                    left,
+                  }}
                 >
                   <Card
-                    className={`w-32 h-32 piece-content
+                    className={`piece-content
                       ${selectedPiece === index ? 'shadow-lg ring-2 ring-blue-400' : ''}
                       ${isValidMove ? 'bg-green-200' : ''}
                       ${revealed[index] ? (piece?.color === PLAYER_RED ? 'bg-orange-100' : 'bg-gray-100') : ''}
                       ${isCurrentPlayerPiece || !revealed[index] ? 'cursor-pointer' : 'cursor-not-allowed'}
+                      ${!piece ? 'opacity-0 hover:opacity-30' : ''}
                       transition-all duration-300 hover:shadow-lg`}
                     onClick={() => handlePieceClick(index)}
                   >
                     <div className="piece-front">
-                      <div className="text-4xl text-gray-400">?</div>
+                      <div className="text-4xl text-gray-400">{piece ? '?' : ''}</div>
                     </div>
                     <div className="piece-back">
                       {piece && (
