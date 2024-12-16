@@ -1,13 +1,12 @@
+'use client'
 import { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import GameBoard from '@/components/GameBoard';
-import GameBoardCanvas from '@/components/GameBoardCanvas';
 
 import constants from '@/lib/constants';
 
 import LoginForm from '@/components/LoginForm';
 import RoomList from '@/components/RoomList';
-import Head from 'next/head'
 
 export default function Home() {
   const [socket, setSocket] = useState(null);
@@ -121,10 +120,6 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>动物棋</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
-      </Head>
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4">
           <header className="flex items-center justify-between py-4">
