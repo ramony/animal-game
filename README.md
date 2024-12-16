@@ -70,9 +70,9 @@
 ## 部署
 
 1. 部署游戏逻辑服务器
-    - 进入 `server` 目录，运行 `node server.js`
-2. 部署前端
-    - 根目录，运行 `npm run dev`
+    - 进入 `api` 目录，执行 `npm i`, 运行 `node server.js`
+2. 部署前端页面
+    - 进入 `web` 目录，执行 `npm i`, 运行 `npm run dev`
 3. 访问 `http://localhost:3000` 开始游戏
 
 ## 贡献
