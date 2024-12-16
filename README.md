@@ -1,8 +1,10 @@
 # 动物棋 (Animal Chess)
 
-一个基于 Next.js 和 React 开发的现代化动物棋游戏。
+一个基于 Next.js 和 React 和 Node 和 websocket 开发的在线动物棋游戏。
 
 ## 游戏介绍
+
+先登录后加入一个房间，等待其他玩家加入，然后开始游戏。系统预设两个用户(user1/pass1，user2/pass2), 预设10个房间
 
 动物棋是一款经典的双人对战棋类游戏，每位玩家控制10个不同的动物棋子，通过策略性的移动和吃子来获得胜利。
 
@@ -50,11 +52,12 @@
 
 ## 技术栈
 
+- Node
 - Next.js
 - React
-- Tailwind CSS
-- Shadcn UI
-- CSS Animations
+- JavaScript
+- MUI
+- Websocket
 
 ## 特色功能
 
@@ -64,23 +67,6 @@
 - 清晰的游戏状态提示
 - 直观的操作反馈
 
-## 开发环境设置
-
-1. 克隆仓库
-```bash
-git clone [repository-url]
-cd animal-game
-```
-
-2. 安装依赖
-```bash
-npm install
-```
-
-3. 运行开发服务器
-```bash
-npm run dev
-```
 
 4. 访问 `http://localhost:3000` 开始游戏
 
