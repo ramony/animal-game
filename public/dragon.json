@@ -1,0 +1,111 @@
+{"frames": {
+
+"flyingdragon-0.png":
+{
+	"frame": {"x":135,"y":265,"w":128,"h":105},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":20,"w":128,"h":105},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-1.png":
+{
+	"frame": {"x":131,"y":395,"w":120,"h":119},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":6,"w":120,"h":119},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-2.png":
+{
+	"frame": {"x":1,"y":357,"w":128,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":22,"w":128,"h":103},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-3.png":
+{
+	"frame": {"x":135,"y":1,"w":130,"h":117},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":0,"w":130,"h":117},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-4.png":
+{
+	"frame": {"x":1,"y":1,"w":132,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":23,"w":132,"h":90},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-5.png":
+{
+	"frame": {"x":135,"y":133,"w":130,"h":117},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":0,"w":130,"h":117},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-6.png":
+{
+	"frame": {"x":1,"y":93,"w":132,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":22,"w":132,"h":90},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-7.png":
+{
+	"frame": {"x":1,"y":185,"w":132,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":24,"w":132,"h":84},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-8.png":
+{
+	"frame": {"x":1,"y":560,"w":128,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":10,"w":128,"h":94},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-9.png":
+{
+	"frame": {"x":1,"y":271,"w":132,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":23,"w":132,"h":84},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-10.png":
+{
+	"frame": {"x":131,"y":516,"w":120,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":5,"w":120,"h":104},
+	"sourceSize": {"w":139,"h":125}
+},
+"flyingdragon-11.png":
+{
+	"frame": {"x":1,"y":462,"w":128,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":9,"w":128,"h":96},
+	"sourceSize": {"w":139,"h":125}
+}},
+"animations": {
+	"flyingdragon": ["flyingdragon-0.png","flyingdragon-1.png","flyingdragon-2.png","flyingdragon-3.png","flyingdragon-4.png","flyingdragon-5.png","flyingdragon-6.png","flyingdragon-7.png","flyingdragon-8.png","flyingdragon-9.png","flyingdragon-10.png","flyingdragon-11.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "dragon.png",
+	"format": "RGBA8888",
+	"size": {"w":253,"h":655},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9dfc175f87a76356eeec01ee19b37a6f:61bdd457650a54a73c9328daa91ee7e3:581e962efa07d1f36d42214f5f5ec489$"
+}
+}
