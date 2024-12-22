@@ -247,6 +247,7 @@ ANIMAL_EVENT_HANDLER.reveal = ({ roomId, index }, rooms, socket) => {
 
 ANIMAL_EVENT_HANDLER.move = ({ roomId, selectedPiece, index }, rooms, socket) => {
   const room = rooms[roomId - 1];
+  const actions = []
   if (room && room.gameState) {
     // 验证和执行移动
     const gameState = room.gameState;
@@ -265,8 +266,10 @@ ANIMAL_EVENT_HANDLER.move = ({ roomId, selectedPiece, index }, rooms, socket) =>
       if (newPiece) {
         const newPieceText = getPieceText(newPiece);
         gameState.gameStatus = `${oldPieceText}吃掉了${newPieceText}`;
+        actions.push({ type: 'capture', oldPiece, newPiece });
       } else {
         gameState.gameStatus = `${oldPieceText}移动到新位置`;
+        actions.push({ type: 'move', oldPiece, newPiece });
       }
 
       const playerColor = gameState.playerColorMap[currentPlayer];
@@ -279,7 +282,7 @@ ANIMAL_EVENT_HANDLER.move = ({ roomId, selectedPiece, index }, rooms, socket) =>
       gameState.gameStatus = `不能移动到该位置，请重新选择`;
       return { to: 'me', type: 'gameUpdate', data: room.gameState };
     }
-    return { to: `room-${roomId}`, type: 'gameUpdate', data: room.gameState }
+    return { to: `room-${roomId}`, type: 'gameUpdate', data: { ...room.gameState, actions } }
   }
 }
 

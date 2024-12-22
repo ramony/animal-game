@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import GameBoard from '@/components/GameBoard';
+import GameBoardCanvas from '@/components/GameBoardCanvas';
 
 import constants from '@/lib/constants';
 
@@ -14,6 +15,7 @@ export default function Home() {
   const [currentRoom, setCurrentRoom] = useState(null);
   const [gameState, setGameState] = useState(null);
   const [player, setPlayer] = useState();
+  const [switchToCanvas, setSwitchToCanvas] = useState(false);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -145,17 +147,23 @@ export default function Home() {
             </div>
           )}
 
-          {gameState && player != null && (
+          {gameState && player != null && switchToCanvas && (
+            <GameBoardCanvas room={currentRoom} player={player} gameState={gameState}
+              onReveal={handleReveal}
+              onMove={handleMove}
+              onBackdoor={handleBackdoor} />
+          )}
+
+          {gameState && player != null && !switchToCanvas && (
             <GameBoard room={currentRoom} player={player} gameState={gameState}
               onReveal={handleReveal}
               onMove={handleMove}
               onBackdoor={handleBackdoor} />
           )}
 
-          {/* <GameBoardCanvas room={currentRoom} player={player} gameState={gameState}
-            onReveal={handleReveal}
-            onMove={handleMove}
-            onBackdoor={handleBackdoor} /> */}
+          <button onClick={() => setSwitchToCanvas(!switchToCanvas)}>
+            {switchToCanvas ? '切换到Canvas' : '切换到React'}
+          </button>
 
         </div>
       </div>
