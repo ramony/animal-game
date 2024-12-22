@@ -6,7 +6,7 @@ import useKeys from '../hooks/useKeys';
 
 const DragonScene = ({ width, height, top, left }) => {
 
-  const [player, setPlayer] = useState({ x: width / 2, y: height / 2, radius: 20 });
+  const characterRef = useRef(null);
   const playerSpeed = 5
   const playerRadius = 32
   const [playerFrames, setPlayerFrames] = useState([]);
@@ -17,7 +17,7 @@ const DragonScene = ({ width, height, top, left }) => {
 
     PIXI.Assets.load("/dragon.json").then((resources) => {
       const dragonFrames = resources.animations.flyingdragon;
-      setPlayerFrames(dragonFrames.slice(0, 1));
+      setPlayerFrames(dragonFrames.slice(0, 3));
     });
 
     registerPress('Space', () => {
@@ -34,26 +34,23 @@ const DragonScene = ({ width, height, top, left }) => {
   useTick(() => {
     //setFps(PIXI.Ticker.shared.FPS.toFixed(0)); // 保留两位小数
 
-    setPlayer(prev => {
-      const curr = { ...prev }
-      if (keys.ArrowLeft) {
-        curr.x = Math.max(curr.x - playerSpeed, playerRadius)
-      } else if (keys.ArrowRight) {
-        curr.x = Math.min(curr.x + playerSpeed, width - playerRadius)
-      } else if (keys.ArrowUp) {
-        curr.y = Math.max(curr.y - playerSpeed, playerRadius)
-      } else if (keys.ArrowDown) {
-        curr.y = Math.min(curr.y + playerSpeed, height - playerRadius)
-      } else {
-        // curr.x = Math.max(curr.x + (Math.random() - 0.5) * playerSpeed, playerRadius)
-        // curr.x = Math.min(curr.x, width - playerRadius)
+    const curr = characterRef.current
+    if (keys.ArrowLeft) {
+      curr.x = Math.max(curr.x - playerSpeed, playerRadius)
+    } else if (keys.ArrowRight) {
+      curr.x = Math.min(curr.x + playerSpeed, width - playerRadius)
+    } else if (keys.ArrowUp) {
+      curr.y = Math.max(curr.y - playerSpeed, playerRadius)
+    } else if (keys.ArrowDown) {
+      curr.y = Math.min(curr.y + playerSpeed, height - playerRadius)
+    } else {
+      // curr.x = Math.max(curr.x + (Math.random() - 0.5) * playerSpeed, playerRadius)
+      // curr.x = Math.min(curr.x, width - playerRadius)
 
-        // curr.y = Math.max(curr.y + (Math.random() - 0.5) * playerSpeed, playerRadius)
-        // curr.y = Math.min(curr.y, height - playerRadius)
+      // curr.y = Math.max(curr.y + (Math.random() - 0.5) * playerSpeed, playerRadius)
+      // curr.y = Math.min(curr.y, height - playerRadius)
 
-      }
-      return curr
-    });
+    }
   });
 
   if (playerFrames.length === 0) {
@@ -62,6 +59,7 @@ const DragonScene = ({ width, height, top, left }) => {
 
   return (
     <Container width={width} height={height} x={left} y={top}>
+
       <Graphics x={0} y={0}>
         <Graphics draw={
           g => {
@@ -72,19 +70,7 @@ const DragonScene = ({ width, height, top, left }) => {
         }
         />
       </Graphics>
-
-      <Text
-        text={`FPS: ${fps}`}
-        x={0}
-        y={0}
-        style={new PIXI.TextStyle({
-          fill: 0xffffff,
-          fontSize: 18
-        })}
-      />
-
-      {playerFrames.length > 0 && <Container x={player.x}
-        y={player.y}>
+      {playerFrames.length > 0 && <Container ref={characterRef}>
         <AnimatedSprite
           scale={0.5}
           anchor={0.5}
