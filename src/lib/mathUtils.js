@@ -5,7 +5,9 @@ const calcNewPos = (pos, r, theta) => {
 }
 
 const inDistance = (pos1, pos2, distance) => {
-  return Math.sqrt((pos1.x - pos2.x) * (pos1.x - pos2.x) + (pos1.y - pos2.y) * (pos1.y - pos2.y)) < distance
+  const dis = Math.sqrt((pos1.x - pos2.x) * (pos1.x - pos2.x) + (pos1.y - pos2.y) * (pos1.y - pos2.y))
+  //console.log('dis', dis, distance)
+  return dis < distance
 }
 
 export { calcNewPos, inDistance }
