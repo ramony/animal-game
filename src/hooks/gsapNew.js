@@ -27,6 +27,7 @@ const gsapNew = {
         const calculated = vars.compute.bind(store)();
         store.current = calculated;
         if (vars.onUpdate) {
+          // console.log('onUpdate', newTween)
           vars.onUpdate.bind(newTween)();
         }
       },
@@ -44,6 +45,7 @@ const gsapNew = {
 
     const newTween = {
       now: performance.now(),
+      data: vars.data,
       targets: function () {
         return [store.current];
       },
