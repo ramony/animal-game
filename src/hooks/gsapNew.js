@@ -7,7 +7,7 @@ const gsapNew = {
   move: function (targets, vars) {
     const store = {
       current: targets,
-      init: targets,
+      init: { ...targets },
     }
     const stepInterval = vars.stepInterval || -1
     const stepFlag = stepInterval > 0;
