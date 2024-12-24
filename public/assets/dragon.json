@@ -1,0 +1,503 @@
+{
+	"textures": [
+		{
+			"image": "dragon.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 403,
+				"h": 228
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "flyingdragon-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 139,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 6,
+						"w": 120,
+						"h": 119
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 120,
+						"h": 119
+					}
+				},
+				{
+					"filename": "flyingdragon-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 139,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 20,
+						"w": 128,
+						"h": 105
+					},
+					"frame": {
+						"x": 1,
+						"y": 122,
+						"w": 128,
+						"h": 105
+					}
+				},
+				{
+					"filename": "flyingdragon-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 139,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 22,
+						"w": 128,
+						"h": 103
+					},
+					"frame": {
+						"x": 123,
+						"y": 1,
+						"w": 128,
+						"h": 103
+					}
+				},
+				{
+					"filename": "flyingdragon-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 139,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 22,
+						"w": 128,
+						"h": 103
+					},
+					"frame": {
+						"x": 123,
+						"y": 1,
+						"w": 128,
+						"h": 103
+					}
+				},
+				{
+					"filename": "zhaoyun-0-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 60
+					},
+					"frame": {
+						"x": 253,
+						"y": 1,
+						"w": 48,
+						"h": 60
+					}
+				},
+				{
+					"filename": "zhaoyun-0-4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 60
+					},
+					"frame": {
+						"x": 303,
+						"y": 1,
+						"w": 48,
+						"h": 60
+					}
+				},
+				{
+					"filename": "zhaoyun-0-10.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 60
+					},
+					"frame": {
+						"x": 353,
+						"y": 1,
+						"w": 48,
+						"h": 60
+					}
+				},
+				{
+					"filename": "zhaoyun-0-13.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 60
+					},
+					"frame": {
+						"x": 131,
+						"y": 106,
+						"w": 48,
+						"h": 60
+					}
+				},
+				{
+					"filename": "zhaoyun-0-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 47,
+						"h": 60
+					},
+					"frame": {
+						"x": 181,
+						"y": 106,
+						"w": 47,
+						"h": 60
+					}
+				},
+				{
+					"filename": "zhaoyun-0-8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 57
+					},
+					"frame": {
+						"x": 131,
+						"y": 168,
+						"w": 48,
+						"h": 57
+					}
+				},
+				{
+					"filename": "zhaoyun-0-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 47,
+						"h": 57
+					},
+					"frame": {
+						"x": 181,
+						"y": 168,
+						"w": 47,
+						"h": 57
+					}
+				},
+				{
+					"filename": "zhaoyun-0-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 53
+					},
+					"frame": {
+						"x": 253,
+						"y": 63,
+						"w": 48,
+						"h": 53
+					}
+				},
+				{
+					"filename": "zhaoyun-0-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 5,
+						"w": 48,
+						"h": 55
+					},
+					"frame": {
+						"x": 303,
+						"y": 63,
+						"w": 48,
+						"h": 55
+					}
+				},
+				{
+					"filename": "zhaoyun-0-14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 60
+					},
+					"frame": {
+						"x": 353,
+						"y": 63,
+						"w": 46,
+						"h": 60
+					}
+				},
+				{
+					"filename": "zhaoyun-0-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 8,
+						"w": 48,
+						"h": 52
+					},
+					"frame": {
+						"x": 230,
+						"y": 118,
+						"w": 48,
+						"h": 52
+					}
+				},
+				{
+					"filename": "zhaoyun-0-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 55
+					},
+					"frame": {
+						"x": 230,
+						"y": 172,
+						"w": 39,
+						"h": 55
+					}
+				},
+				{
+					"filename": "zhaoyun-0-9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 11,
+						"w": 47,
+						"h": 49
+					},
+					"frame": {
+						"x": 280,
+						"y": 120,
+						"w": 47,
+						"h": 49
+					}
+				},
+				{
+					"filename": "drop-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 29,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 25,
+						"h": 54
+					},
+					"frame": {
+						"x": 271,
+						"y": 172,
+						"w": 25,
+						"h": 54
+					}
+				},
+				{
+					"filename": "drop-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 29,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 25,
+						"h": 53
+					},
+					"frame": {
+						"x": 298,
+						"y": 171,
+						"w": 25,
+						"h": 53
+					}
+				},
+				{
+					"filename": "zhaoyun-0-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 15,
+						"w": 39,
+						"h": 45
+					},
+					"frame": {
+						"x": 329,
+						"y": 125,
+						"w": 39,
+						"h": 45
+					}
+				},
+				{
+					"filename": "zhaoyun-0-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 38,
+						"h": 49
+					},
+					"frame": {
+						"x": 325,
+						"y": 172,
+						"w": 38,
+						"h": 49
+					}
+				},
+				{
+					"filename": "drop-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 29,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 25,
+						"h": 48
+					},
+					"frame": {
+						"x": 370,
+						"y": 125,
+						"w": 25,
+						"h": 48
+					}
+				},
+				{
+					"filename": "zhaoyun-0-15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 13,
+						"w": 37,
+						"h": 47
+					},
+					"frame": {
+						"x": 365,
+						"y": 175,
+						"w": 37,
+						"h": 47
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:a8dd26b03cd922792d3a106d14cc0eff:aba8ad9210dad4d92eeade26f4dd2c91:581e962efa07d1f36d42214f5f5ec489$"
+	}
+}

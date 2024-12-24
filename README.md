@@ -1,84 +1,8 @@
-# 动物棋 (Animal Chess)
+# React + Vite
 
-一个基于 Next.js 和 React 和 Node 和 socket.io 开发的在线动物棋游戏，在湖北一带比较流行。
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 游戏介绍
+Currently, two official plugins are available:
 
-先登录后加入一个房间，等待其他玩家加入，然后开始游戏。系统预设两个用户(user1/pass1，user2/pass2), 预设10个房间
-
-动物棋是一款经典的双人对战棋类游戏，每位玩家控制10个不同的动物棋子，通过策略性的移动和吃子来获得胜利。
-
-### 棋子等级（从高到低）
-
-1.  枪
-2.  象
-3.  狮
-4.  虎
-5.  豹
-6.  狼
-7.  人
-8.  狗
-9.  猫
-10. 鼠
-
-### 特殊规则
-
-- 人可以吃枪，枪不能吃人
-- 鼠可以吃象，象不能吃鼠
-
-## 游戏规则
-
-1. **开局阶段**
-   - 20个棋子随机分布在5x4的棋盘上
-   - 所有棋子开始时都是背面朝上（未翻开）
-
-2. **确定颜色阶段**
-   - 玩家轮流翻开棋子
-   - 当翻开的两个棋子颜色不同时，确定双方所属颜色
-   - 第一个进入房间的玩家先手
-
-3. **游戏进行阶段**
-   - 玩家可以：
-     * 翻开一个未翻开的棋子
-     * 移动自己的已翻开棋子
-     * 吃掉对方的棋子（按照等级规则和特殊规则）
-   - 每次只能移动一步（上下左右）
-
-4. **胜利条件**
-   - 当所有棋子都翻开后：
-     * 一方的棋子全部被吃掉，则该方输掉游戏
-     * 轮到一方走棋时，如果其所有棋子都无法移动，则该方输掉游戏
-
-## 技术栈
-
-- Node
-- Next.js
-- React
-- JavaScript
-- Shadcn/UI
-- Socket.io
-
-## 特色功能
-
-- 现代化UI设计
-- 流畅的动画效果
-- 响应式布局
-- 清晰的游戏状态提示
-- 直观的操作反馈
-
-
-## 部署
-
-1. 部署游戏逻辑服务器
-    - 进入 `api` 目录，执行 `npm i`, 运行 `node server.js`
-2. 部署前端页面
-    - 进入 `web` 目录，执行 `npm i`, 运行 `npm run dev`
-3. 访问 `http://localhost:3000` 开始游戏
-
-## 贡献
-
-欢迎提交 Issue 和 Pull Request 来帮助改进游戏。
-
-## 许可证
-
-MIT License
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
